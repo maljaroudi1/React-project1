@@ -1,0 +1,119 @@
+* {
+  font-family: "Prompt", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rowdies", cursive;
+}
+
+.menu-active {
+  transform: translateY(0rem) !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu {
+  background-color: black;
+  position: fixed;
+  margin-top: -1.73rem;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-80rem);
+  transition: all 0.4s ease-in-out;
+  z-index: 2;
+}
+.menu .menu-right {
+  transform: translateX(80rem);
+  position: fixed;
+  width: 60%;
+  height: 100%;
+  background-color: aqua;
+  z-index: 2;
+}
+.menu .menu-right .menu-nav {
+  position: fixed;
+  z-index: 2;
+  margin-top: 12rem;
+  margin-left: 4rem;
+  display: grid;
+  line-height: 10rem;
+}
+.menu .menu-right .menu-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 4.5rem;
+  transition: all 0.4s ease-in-out;
+}
+.menu .menu-right .menu-nav a:hover {
+  transition: all 0.4s ease-in-out;
+  color: #000;
+}
+.menu .menu-left img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.menu .menu-left h1 {
+  position: fixed;
+  color: white;
+  z-index: 2;
+  margin-top: 12rem;
+  margin-left: 8rem;
+  font-size: 6.5rem;
+}
+.menu .menu-left p {
+  position: fixed;
+  color: white;
+  margin-top: 29rem;
+  margin-left: 8rem;
+  font-size: 2.5rem;
+  z-index: 2;
+}
+.menu .menu-left .menu-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+.menu .menu-left .menu-links {
+  position: fixed;
+  margin-top: 55rem;
+  margin-left: 7.9rem;
+  z-index: 3;
+}
+.menu .menu-left .menu-links a {
+  color: white;
+  text-decoration: none;
+}
+.menu .menu-left .menu-links a:hover {
+  color: #ff0202;
+}
+
+.menu-button {
+  position: fixed;
+  z-index: 4;
+  margin-left: 110rem;
+  margin-top: 3rem;
+  mix-blend-mode: difference;
+  transform: scaleX(1.3);
+  color: aqua;
+}
+.menu-button .active-btn {
+  display: block !important;
+}
+.menu-button svg {
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  color: #ff0000;
+}
+.menu-button svg:hover {
+  color: rgb(0, 255, 208);
+  transition: all 0.4s ease-in-out;
+}
+.menu-button .after {
+  font-size: 3.9rem;
+  display: none;
+  margin-left: 0.3rem;
+}
+.menu-button .before {
+  display: none;
+}/*# sourceMappingURL=menu.css.map */

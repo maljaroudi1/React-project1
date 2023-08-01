@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.img-container {
+  display: flex;
+  margin-left: -21rem;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
+  padding-top: 18rem;
+}
+.img-container .icon-background {
+  position: absolute;
+  display: flex;
+  top: 29rem;
+  left: 0.5rem;
+  background: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.img-container .icon-background svg {
+  width: 24rem;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.img-container .img-background {
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  color: var(--main-color);
+  border: 1px solid;
+  width: 3rem;
+  height: 32.2rem;
+  margin-left: 2rem;
+  left: 50rem;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.img-container .img-background .info {
+  display: flex;
+  position: absolute;
+  margin-top: 17rem;
+  margin-left: 5rem;
+  color: white;
+}
+.img-container .img-background .info .title {
+  font-weight: 900;
+  font-family: system-ui;
+  margin-top: -3rem;
+}
+.img-container .img-background .info .parapgraph {
+  margin-left: -2.2rem;
+  margin-top: -1rem;
+  font-weight: 100;
+  width: 73%;
+  font-family: system-ui;
+}
+.img-container .img-background .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.img-container .img-background img {
+  width: 57rem;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  margin-top: 0rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.img-container .img-active {
+  width: 30% !important;
+  transition: all 0.4s ease-in-out;
+  margin-left: 3rem !important;
+  margin-right: 2rem !important;
+  transform: scale(1.1);
+}/*# sourceMappingURL=App.css.map */

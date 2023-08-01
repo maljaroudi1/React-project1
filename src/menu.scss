@@ -1,0 +1,120 @@
+*{
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rowdies', cursive;
+}
+.menu-active{
+    transform: translateY(0rem) !important;
+    transition: all .4s ease-in-out;
+}
+.menu{
+    background-color: black;
+    position: fixed;
+    margin-top: -1.73rem;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-80rem);
+    transition: all .4s ease-in-out;
+    z-index: 2;
+    .menu-right{
+        transform: translateX(80rem);
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        background-color: aqua;
+        z-index: 2;
+        .menu-nav{
+            position: fixed;
+            z-index: 2;
+            margin-top: 12rem;
+            margin-left: 4rem;
+            display: grid;
+            line-height: 10rem;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 4.5rem;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    transition: all .4s ease-in-out;
+                    color: #000;
+                }
+            }
+        }
+    }
+    .menu-left{
+        img{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            position: fixed;
+            color: white;
+            z-index: 2;
+            margin-top: 12rem;
+            margin-left: 8rem;
+            font-size: 6.5rem;
+        }
+        p{
+            position: fixed;
+            color: white;
+            margin-top: 29rem;
+            margin-left: 8rem;
+            font-size: 2.5rem;
+            z-index: 2;
+        }
+        .menu-overlay{
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+        }
+        .menu-links{
+            position: fixed;
+            margin-top: 55rem;
+            margin-left: 7.9rem;
+            z-index: 3;
+            a{
+                color: white;
+                text-decoration: none;
+                &:hover{
+                    color: #ff0202;
+                }
+            }
+        }
+    }
+}
+.menu-button{
+    position: fixed;
+    z-index: 4;
+    margin-left: 110rem;
+    margin-top: 3rem;
+    mix-blend-mode: difference;
+    transform:scaleX(1.3) ;
+    color: aqua;
+    .active-btn{
+        display: block !important;
+    }
+    svg{
+        font-size: 4rem;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        color: #ff0000;
+        &:hover{
+            color: rgb(0, 255, 208);
+            transition: all .4s ease-in-out;
+        }
+    }
+    .after{
+        font-size: 3.9rem;
+        display: none;
+        margin-left: 0.3rem;
+        
+    }
+    .before{
+        display: none;
+        
+    }
+}
