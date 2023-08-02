@@ -1,0 +1,117 @@
+
+:root{
+    --black:black;
+    --white:white;
+    --green-light: #00b9b9;
+    --bisque: #efefef;
+    --main-color:#212121;
+    -color-grey0: #f8f8f8;
+    --color-grey1: #dbe1e8;
+    --color-grey2: #b2becd;
+    --color-grey3: #6c7983;
+    --color-grey4: #454e56;
+    --color-grey5: #2a2e35;
+    --color-grey6: #12181b;
+    --overlay-color1: rgba(0, 0, 0, 0.1);
+    --overlay-color2: rgba(0, 0, 0, 0.2);
+    --overlay-color3: rgba(0, 0, 0, 0.3);
+    --overlay-color4: rgba(0, 0, 0, 0.4);
+    --overlay-color5: rgba(0, 0, 0, 0.5);
+    --overlay-color6: rgba(0, 0, 0, 0.6);
+    --box-shadow1: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    --border-radius1: 15px; 
+    --text-shadow1:0 2px 2px #ff6c00, -2px 5px 1px #b8b8b8;
+}
+body{
+    background-color: var(--bisque);
+}
+section{
+    min-height: 800px;
+    height: 800px;
+    width: 100%;
+}
+.sec1{
+    .logo-container{
+        h2{
+            position: fixed;
+            font-size: 3rem;
+            font-weight: 900;
+            color: wheat;
+            text-shadow: var(--text-shadow1);
+            z-index: 13;
+            mix-blend-mode: difference;
+            margin-top: 1.5rem;
+            margin-left: 2rem;
+            transition: all 0.4s ease-in-out;
+        }
+        .logo-symbol{
+            background-color: orange;
+            border-radius: 400px 0px 400px 0px/150px 0px 150px 0px;
+            position: fixed;
+            width: 1%;
+            height: 1%;
+            top: 2.2rem;
+            left: 3.3rem;
+            z-index: 13;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+    .main-page-container{
+        .main-text-container{
+            position: absolute;
+            z-index: 2;
+            margin-top: 12rem;
+            margin-left: 14rem;
+            color: #efefef;
+            mix-blend-mode: difference;
+            h1{
+                font-size: 10rem;
+            }
+        }
+        .main-page-overlay{
+            background: linear-gradient(to bottom, rgba(33, 33, 33, 0) 0%, #212121 50%);
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to bottom, rgba(33, 33, 33, 0) 0%, #212121 50%);
+            position: absolute;
+            border-bottom-right-radius: 15vw;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .main-page-overlay::before{
+            content: "";
+            background-color: var(--main-color);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 14vw;
+            height: 15vw;
+        }
+        .main-page-overlay::after{
+            content: "";
+            background-color: var(--bisque);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 15vw;
+            height: 15vw;
+            border-top-left-radius: 15vw;
+        }
+       
+        .video-beach{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-top: -1rem;
+            overflow: hidden;
+            -o-object-fit: cover;
+            object-fit: cover;
+            border-bottom-right-radius: 15vw;
+            pointer-events: none;
+            -o-object-position: 0 -5vw;
+            object-position: 0 -5vw;
+        }
+    }
+    
+}
